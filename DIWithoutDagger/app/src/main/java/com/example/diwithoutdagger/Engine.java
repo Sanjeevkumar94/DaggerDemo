@@ -1,13 +1,12 @@
 package com.example.diwithoutdagger;
 
+import android.util.Log;
+
 public class Engine {
     private SparkPlug sparkPlug;
-    private CrankShaft crankShaft;
-    private Piston piston;
 
-    public Engine(SparkPlug sparkPlug,CrankShaft crankShaft,Piston piston){
+    public Engine(SparkPlug sparkPlug){
         this.sparkPlug = sparkPlug;
-        this.crankShaft =crankShaft;
-        this.piston = piston;
+        Log.d("tag","Engine Started");
     }
 }

@@ -1,12 +1,15 @@
 package com.example.diwithoutdagger;
 
+import android.util.Log;
+
 public class Wheel {
     private Rubber rubber;
-    private Frame frame;
-
-    public Wheel(Rubber rubber,Frame frame) {
+    public Wheel(Rubber rubber) {
         rubber = rubber;
-        frame = frame;
+    }
+
+    public void inflateWheel(){
+        Log.d("tag","inflated wheel");
     }
 
 }
