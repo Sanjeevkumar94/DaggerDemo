@@ -6,11 +6,18 @@ import javax.inject.Inject;
 
 public class MainViewModel {
 
-    private final NetworkClient mClient;
+//    private final NetworkClient mClient;
 
     @Inject
-    public MainViewModel(NetworkClient networkClient) {
-        this.mClient = networkClient;
+     NetworkClient mClient;
+
+//    @Inject
+//    public MainViewModel(NetworkClient networkClient) {
+//        this.mClient = networkClient;
+//    }//
+//
+    @Inject
+    public MainViewModel() {
     }
 
     public String fetchData(){
@@ -18,3 +25,7 @@ public class MainViewModel {
     }
 
 }
+
+
+/*4 agar constructor injection humare class mein ho ri hogi toh field injection and method injection apne app
+    perform ho jayegi.*/
