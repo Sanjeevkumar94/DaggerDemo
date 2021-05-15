@@ -8,5 +8,4 @@ import dagger.Component;
 @Component
 public interface MainViewModelInjector {
     void injectFields(MainActivity mainActivity);
-    void injectFields(MainViewModel mainViewModel);
 }

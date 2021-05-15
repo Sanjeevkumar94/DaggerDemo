@@ -22,15 +22,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         DaggerMainViewModelInjector.create().injectFields(this);
+    }
+
+    @Inject
+    void callingInMain(){
         Toast.makeText(this,mainViewModel.fetchData(),Toast.LENGTH_SHORT).show();
     }
+
+    //main Activity mein callingInMain() ko  dagger tabhi call krega if yaha Field injection h rahi hai . agar FieldInjection ni ho rahi  hai toh yeh apne app call ni hoga.
 }
 
-
-
-/*
-1 Field injection mein Variable Private ni hona chahiye.
-2 agar apke pass constructor avialble ho toh constructor injection kre.
-3 Field injection tabhi krna chahiye jub hum uska constuctor create ni kr skate like Main activity, Retrofit and other Android Framework;*/
-/*4 agar constructor injection humare class mein ho ri hogi toh field injection and method injection apne app
-    perform ho jayegi.*/
