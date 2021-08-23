@@ -20,6 +20,14 @@ public class MainActivity extends AppCompatActivity {
         Frame  frame = new Frame();
         Wheel wheel = new Wheel(rubber,frame);
 
-        Car hondaCar = new Car(engine,wheel);
+        Car hondaCar = new Car(engine); // constructor injection
+        hondaCar.setWheel(wheel);
+        hondaCar.service = new ServiceCar();
+
+
+
+
+
+
     }
 }

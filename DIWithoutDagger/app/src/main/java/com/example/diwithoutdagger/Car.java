@@ -6,9 +6,13 @@ public class Car {
 
     private Engine engine;
     private Wheel wheel;
+    public ServiceCar service;      //Field Injection
 
-    public Car(Engine engine,Wheel wheel) {
+    public Car(Engine engine) {                     // Constructor injection
         this.engine = engine;
+    }
+
+    public void setWheel(Wheel wheel) {              //Wheel injection
         this.wheel = wheel;
     }
 
