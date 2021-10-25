@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.diwithoutdagger.basic.MainViewModel;
-import com.example.diwithoutdagger.di.DaggerMainViewModelInjector;
 import com.example.diwithoutdagger.network.NetworkClient;
 import com.example.diwithoutdagger.network.NetworkConnection;
 
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        DaggerMainViewModelInjector.create().injectFields(this);
+//        DaggerMainViewModelInjector.create().injectFields(this);
     }
 
     @Inject
