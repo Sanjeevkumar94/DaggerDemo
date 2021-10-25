@@ -41,4 +41,7 @@ dependencies {
     implementation 'com.google.dagger:dagger:2.35.1'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.35.1'
 
+    implementation 'org.glassfish:javax.annotation:10.0-b28'
+    compileOnly 'com.github.pengrad:jdk9-deps:1.0'
+
 }

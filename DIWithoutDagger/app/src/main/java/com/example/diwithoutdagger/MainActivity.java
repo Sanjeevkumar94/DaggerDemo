@@ -10,7 +10,7 @@ import com.example.diwithoutdagger.di.DaggerMainViewModelInjector;
 import com.example.diwithoutdagger.network.NetworkClient;
 import com.example.diwithoutdagger.network.NetworkConnection;
 
-public class MainActivity extends AppCompatActivity {
+    public class MainActivity extends AppCompatActivity {
 
     private MainViewModel mainViewModel;
 
