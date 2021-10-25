@@ -1,5 +1,9 @@
 package com.example.diwithoutdagger.utils;
 
+import android.util.Log;
+
+import javax.inject.Inject;
+
 import androidx.annotation.NonNull;
 
 public class Transaction {
@@ -11,6 +15,7 @@ public class Transaction {
 
     public Transaction(long mTime) {
         this.mTime = mTime;
+        Log.d("trasnClassCons","Hello" );
     }
 
     @NonNull

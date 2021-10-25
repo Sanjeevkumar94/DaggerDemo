@@ -1,5 +1,7 @@
 package com.example.diwithoutdagger.di;
 
+import android.util.Log;
+
 import com.example.diwithoutdagger.utils.DataStorageHelper;
 import com.example.diwithoutdagger.utils.Transaction;
 
@@ -11,6 +13,7 @@ public class DataStorageModule {
 
     @Provides
     public static Transaction provideTransaction() {
+        Log.d("DataStorageModule","Hello" );
         return new Transaction(System.currentTimeMillis());
     }
 
