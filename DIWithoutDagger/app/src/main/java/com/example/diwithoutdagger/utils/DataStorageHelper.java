@@ -15,7 +15,7 @@ public class DataStorageHelper {
         this.mTransaction = mTransaction;
     }
 
-    public void storeData(String data) {
+        public void storeData(String data) {
         if (mPermission)
             Log.d("TAG", "storeData: Storing data: " + data + ", at " + mTransaction);
         else
